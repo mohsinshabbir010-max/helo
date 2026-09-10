@@ -9,6 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <noscript>
+    <style>
+      @media (max-width: 640px) {
+        .nav__toggle { display: none; }
+        .nav__menu {
+          position: static;
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          width: 100%;
+        }
+      }
+    </style>
+  </noscript>
 </head>
 <body>
   <!-- Replace all placeholder text, links, and project details with your own. -->
@@ -68,8 +82,8 @@
           </p>
           <div class="card__tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
           <div class="card__links">
-            <a href="#">Live</a>
-            <a href="#">Code</a>
+            <a href="#" aria-label="Project One — live site">Live</a>
+            <a href="#" aria-label="Project One — source code">Code</a>
           </div>
         </article>
         <article class="card">
@@ -79,8 +93,8 @@
           </p>
           <div class="card__tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
           <div class="card__links">
-            <a href="#">Live</a>
-            <a href="#">Code</a>
+            <a href="#" aria-label="Project Two — live site">Live</a>
+            <a href="#" aria-label="Project Two — source code">Code</a>
           </div>
         </article>
         <article class="card">
@@ -90,8 +104,8 @@
           </p>
           <div class="card__tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
           <div class="card__links">
-            <a href="#">Live</a>
-            <a href="#">Code</a>
+            <a href="#" aria-label="Project Three — live site">Live</a>
+            <a href="#" aria-label="Project Three — source code">Code</a>
           </div>
         </article>
       </div>

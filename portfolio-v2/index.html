@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Sam — front-end developer and designer." />
+  <title>Sam — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <noscript>
+    <style>
+      @media (max-width: 640px) {
+        .nav__toggle { display: none; }
+        .nav__menu {
+          position: static;
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          width: 100%;
+        }
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+  <!-- Replace all placeholder text, links, and project details with your own. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="nav__brand">Sam<span>.</span></a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+    <section class="hero container">
+      <p class="hero__badge"><span class="hero__dot" aria-hidden="true"></span> Available for freelance</p>
+      <h1 class="hero__title">Front-end developer building calm, accessible interfaces.</h1>
+      <p class="hero__lead">
+        I'm Sam — I design and build websites that load fast, work everywhere,
+        and stay out of the way. Currently taking on new projects.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#work">See my work</a>
+        <a class="btn btn--ghost" href="#contact">Start a project</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section__title">About</h2>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            Write two or three sentences about who you are, what you do, and what
+            you care about. Mention the kinds of problems you like to solve and
+            the teams you enjoy working with.
+          </p>
+          <p>
+            A second paragraph is a good place for a bit of personality — what
+            got you into building for the web, or what you're learning right now.
+          </p>
+        </div>
+        <div class="about__aside">
+          <h3 class="about__label">Toolkit</h3>
+          <ul class="chips">
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>Accessibility</li>
+            <li>Responsive design</li>
+            <li>Performance</li>
+            <li>Design systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <h2 class="section__title">Selected work</h2>
+      <div class="projects">
+        <article class="card">
+          <p class="card__meta">2025 · Client work</p>
+          <h3 class="card__title">Project One</h3>
+          <p class="card__body">
+            Short description of what it is, your role, and the outcome you
+            delivered for the client or team.
+          </p>
+          <div class="card__tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="card__links">
+            <a href="#" aria-label="Project One — live site">Live&nbsp;&rarr;</a>
+            <a href="#" aria-label="Project One — source code">Code&nbsp;&rarr;</a>
+          </div>
+        </article>
+        <article class="card">
+          <p class="card__meta">2024 · Side project</p>
+          <h3 class="card__title">Project Two</h3>
+          <p class="card__body">
+            Short description of what it is, your role, and the outcome you
+            delivered for the client or team.
+          </p>
+          <div class="card__tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="card__links">
+            <a href="#" aria-label="Project Two — live site">Live&nbsp;&rarr;</a>
+            <a href="#" aria-label="Project Two — source code">Code&nbsp;&rarr;</a>
+          </div>
+        </article>
+        <article class="card">
+          <p class="card__meta">2024 · Open source</p>
+          <h3 class="card__title">Project Three</h3>
+          <p class="card__body">
+            Short description of what it is, your role, and the outcome you
+            delivered for the client or team.
+          </p>
+          <div class="card__tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="card__links">
+            <a href="#" aria-label="Project Three — live site">Live&nbsp;&rarr;</a>
+            <a href="#" aria-label="Project Three — source code">Code&nbsp;&rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <h2 class="section__title">Experience</h2>
+      <ol class="timeline">
+        <li class="timeline__item">
+          <p class="timeline__period">2023 &ndash; Present</p>
+          <h3 class="timeline__role">Front-end Developer &middot; Company</h3>
+          <p class="timeline__note">
+            One or two lines on what you own, the stack, and something you shipped.
+          </p>
+        </li>
+        <li class="timeline__item">
+          <p class="timeline__period">2021 &ndash; 2023</p>
+          <h3 class="timeline__role">Web Developer &middot; Company</h3>
+          <p class="timeline__note">
+            One or two lines on what you owned and a result you're proud of.
+          </p>
+        </li>
+        <li class="timeline__item">
+          <p class="timeline__period">2020 &ndash; 2021</p>
+          <h3 class="timeline__role">Freelance &middot; Self-employed</h3>
+          <p class="timeline__note">
+            One or two lines on the clients you worked with and what you built.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section__title">Contact</h2>
+      <p class="contact__lead">
+        Have a project in mind or just want to say hi? The quickest way to reach
+        me is by email.
+      </p>
+      <p class="contact__email">
+        <a href="mailto:you@example.com">you@example.com</a>
+      </p>
+      <ul class="contact__social">
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Bluesky</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Sam. Built with plain HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -8,3 +8,8 @@ Thumbs.db
 # Node (only if you later add a dev server / build tools)
 node_modules/
 dist/
+
+# Secrets — never commit real keys
+.env
+.env.local
+.env.*.local

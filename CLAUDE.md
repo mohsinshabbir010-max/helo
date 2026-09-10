@@ -33,7 +33,9 @@ in-page anchors (`#about`, `#projects`, `#contact`) with `scroll-behavior: smoot
   which is what activates the hamburger menu.
 - **`js/main.js`** — two small behaviors only: the mobile nav toggle (adds
   `.is-open` to `#nav-menu`, syncs `aria-expanded`) and writing the current year
-  into `#year`. Keep JS minimal; the site should work with scripting disabled.
+  into `#year`. Keep JS minimal: core content works without JS, and the mobile
+  nav falls back to a static, fully expanded menu via a `<noscript>` style block
+  in `index.html` — but the hamburger toggle itself needs JS.
 - **`assets/`** — images and static files.
 
 ## Conventions
