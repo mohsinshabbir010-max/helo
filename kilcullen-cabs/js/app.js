@@ -26,6 +26,13 @@
   });
   if (CFG.email) $$("[data-email]").forEach(function (a) { a.href = "mailto:" + CFG.email; });
   $$("[data-email-text]").forEach(function (el) { if (CFG.email) el.textContent = CFG.email; });
+  if (!CFG.email) $$("[data-email-item]").forEach(function (el) { el.remove(); });
+  if (CFG.landlineTel) $$("[data-landline]").forEach(function (a) { a.href = "tel:" + CFG.landlineTel; });
+  $$("[data-landline-text]").forEach(function (el) { if (CFG.landlineDisplay) el.textContent = CFG.landlineDisplay; });
+  $$("[data-open]").forEach(function (el) {
+    var day = new Date().toLocaleDateString("en-IE", { weekday: "long" });
+    el.textContent = "Open today, " + day + " · " + (CFG.openDays || "7 days a week");
+  });
 
   /* ---------- Fares (NTA national maximum) ---------- */
   function rateFor(dateStr, timeStr) {
@@ -205,8 +212,9 @@
     var text = "New booking request — Kilcullen Cabs\nRef: " + ref + "\n" + rows.map(function (r) { return r[0] + ": " + r[1]; }).join("\n");
     var actions = "";
     if (CFG.whatsapp) actions += '<a class="btn btn--amber btn--block" target="_blank" rel="noopener" href="' + waLink(text) + '">' + icon("i-whatsapp") + "Send booking on WhatsApp</a>";
+    if (CFG.sms) actions += '<a class="btn btn--ghost btn--block" href="sms:' + CFG.sms + "?&body=" + encodeURIComponent(text) + '">' + icon("i-chat") + "Send booking by text message</a>";
     if (CFG.email) actions += '<a class="btn btn--ghost btn--block" href="mailto:' + encodeURIComponent(CFG.email) + "?subject=" + encodeURIComponent("Booking request " + ref) + "&body=" + encodeURIComponent(text) + '">' + icon("i-mail") + "Send booking by email</a>";
-    if (CFG.phoneTel) actions += '<a class="btn btn--ghost btn--block" href="tel:' + CFG.phoneTel + '">' + icon("i-phone") + "Call to confirm</a>";
+    if (CFG.phoneTel) actions += '<a class="btn btn--ghost btn--block" href="tel:' + CFG.phoneTel + '">' + icon("i-phone") + "Call " + esc(CFG.phoneDisplay) + " to confirm</a>";
 
     done.innerHTML =
       '<p class="done__ref"><small>Booking reference</small>' + ref + "</p>" +
@@ -244,6 +252,19 @@
     setTimeout(function () { f("b-date").focus({ preventScroll: true }); }, 450);
   }
   document.addEventListener("click", function (e) {
+    var n = e.target.closest("[data-note]");
+    if (n) {
+      e.preventDefault();
+      f("b-notes").value = n.dataset.note;
+      f("b-dest").value = "";
+      done.hidden = true;
+      form.hidden = false;
+      goStep(1);
+      renderFare();
+      $("#book").scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(function () { f("b-dest").focus({ preventScroll: true }); }, 450);
+      return;
+    }
     var b = e.target.closest("[data-prefill]");
     if (!b) return;
     e.preventDefault();
@@ -268,8 +289,9 @@
   }
   $("#signs").innerHTML = GROUPS.map(function (g) {
     return '<p class="kicker sign-group">' + g[1] + "</p>" +
-      PLACES.filter(function (p) { return p.sign === g[0]; }).map(function (p) {
-        return '<article class="sign sign--' + p.sign + '" data-place="' + p.id + '">' +
+      PLACES.filter(function (p) { return p.sign === g[0]; }).map(function (p, i, list) {
+        var span = list.length % 2 === 1 && i === list.length - 1 ? " sign--span" : "";
+        return '<article class="sign sign--' + p.sign + span + '" data-place="' + p.id + '">' +
           '<div class="sign__top"><span class="sign__route">' + esc(p.route) + "</span>" + pictFor(p) + "</div>" +
           '<p class="sign__ga"' + (p.ga ? ' lang="ga"' : "") + ">" + esc(p.ga) + "</p>" +
           '<div class="sign__row"><h3 class="sign__name">' + esc(p.name) + '</h3><span class="sign__km">' + p.km + "<small> km</small></span></div>" +
@@ -294,7 +316,7 @@
       var r = R(d);
       var x = (p.x / d) * r, y = -(p.y / d) * r;
       var right = x > 250 || x < -240; // label on the dot's left near the edges
-      var quiet = p.route === "Rail" || p.id === "heuston";
+      var quiet = p.route === "Rail" || p.id === "heuston" || p.id === "old-kilcullen";
       return '<g data-place="' + p.id + '"' + (quiet ? ' class="quiet"' : "") + ">" +
         '<line class="spoke" x1="0" y1="0" x2="' + x.toFixed(1) + '" y2="' + y.toFixed(1) + '"/>' +
         '<circle class="dot dot--' + p.sign + '" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="13"/>' +
@@ -305,7 +327,7 @@
       '<svg class="map" viewBox="' + -size + " " + -size + " " + size * 2 + " " + size * 2 + '" role="img" aria-label="Map of popular destinations around Kilcullen">' +
         rings + places +
         '<circle class="home" cx="0" cy="0" r="20"/>' +
-        '<text class="home-label" x="0" y="64" text-anchor="middle">KILCULLEN</text>' +
+        '<text class="home-label" x="0" y="-38" text-anchor="middle">KILCULLEN</text>' +
       "</svg>";
 
     function setActive(id, on) {

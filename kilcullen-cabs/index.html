@@ -18,7 +18,8 @@
   "@context": "https://schema.org",
   "@type": "TaxiService",
   "name": "Kilcullen Cabs",
-  "areaServed": ["Kilcullen", "Naas", "Newbridge", "Kildare", "Athy", "Dublin Airport", "County Kildare"],
+  "telephone": ["+353892458888", "+35345483333"],
+  "areaServed": ["Kilcullen", "Old Kilcullen", "Ballymore Eustace", "The Curragh", "Naas", "Newbridge", "Kildare", "Athy", "Dublin Airport", "County Kildare"],
   "provider": { "@type": "LocalBusiness", "name": "Kilcullen Cabs", "address": { "@type": "PostalAddress", "addressLocality": "Kilcullen", "addressRegion": "Co. Kildare", "addressCountry": "IE" } }
 }
 </script>
@@ -26,6 +27,7 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l2 5L8 10a12 12 0 0 0 6 6l1.5-2.5 5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></symbol>
   <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 12 20a8 8 0 0 1-4-1.1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-2-2l.8-1-1-2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6"/></symbol>
@@ -43,8 +45,8 @@
 
 <div class="topbar">
   <div class="wrap">
-    <span><span class="topbar__dot" aria-hidden="true"></span>Taxi &amp; private hire <span class="topbar__hide-sm">· Kilcullen, Co. Kildare</span></span>
-    <span>Book now: <a href="#book" data-call data-phone-text>045 XXX XXX</a></span>
+    <span><span class="topbar__dot topbar__dot--open" aria-hidden="true"></span><span data-open>Open today · 7 days a week</span> <span class="topbar__hide-sm">· Kilcullen, Co. Kildare</span></span>
+    <span>Call: <a href="tel:+353892458888" data-call data-phone-text>089 245 8888</a></span>
   </div>
 </div>
 
@@ -77,11 +79,12 @@
     <div>
       <p class="kicker hero__kicker">Kilcullen · Naas · Newbridge · Dublin Airport</p>
       <h1>Your Kilcullen cab, <em>booked in a minute.</em></h1>
-      <p class="hero__sub">Airport runs, race days at the Curragh and Punchestown, and every local trip in between. Tell us where you're going — we confirm your price before you travel.</p>
+      <p class="hero__sub">Friendlier, faster and always on time — the cabs the village actually trusts. Airport runs, school runs, race days and every local trip in between.</p>
       <div class="hero__actions">
-        <a class="btn btn--on-photo" href="#book" data-call><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>Call <span data-phone-text>045 XXX XXX</span></a>
+        <a class="btn btn--on-photo" href="tel:+353892458888" data-call><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>Call <span data-phone-text>089 245 8888</span></a>
         <a class="btn btn--on-photo" href="#book" data-wa><svg class="i wa" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>Book on WhatsApp</a>
       </div>
+      <p class="hero__tap">Tap to call · no app, no fuss · 7 days a week</p>
       <dl class="hero__facts">
         <div><dt>Dublin Airport</dt><dd>~51 min</dd></div>
         <div><dt>Naas</dt><dd>~17 min</dd></div>
@@ -191,6 +194,8 @@
         <h3 id="map-title">Where we go</h3>
         <p>Kilcullen at the centre, rings every 10, 25 and 50 km.</p>
         <div id="map"></div>
+        <p class="areas-title">We cover the whole area</p>
+        <ul class="areas"><li>Kilcullen</li><li>Old Kilcullen</li><li>Ballymore Eustace</li><li>Athy Road</li><li>The Curragh</li><li>Dublin Airport</li></ul>
         <div class="map-legend">
           <span><i style="--c:var(--sign-motorway)"></i>Motorway &amp; Dublin</span>
           <span><i style="--c:var(--sign-national)"></i>Towns &amp; stations</span>
@@ -216,33 +221,33 @@
         <div class="service__img"><img src="assets/img/airport.webp" alt="Aircraft parked at Dublin Airport" loading="lazy" decoding="async"></div>
         <div class="service__body">
           <h3>Dublin Airport transfers</h3>
-          <p>Early flight or late arrival — about 50 minutes door to terminal. Add your flight number and we'll time your pickup to your landing.</p>
+          <p>Door to door, tracked and on time — about 50 minutes to the terminal. Add your flight number and we'll time your pickup to your landing.</p>
           <ul><li>Terminal 1 and Terminal 2 drop-offs</li><li>Arrivals pickups timed to your flight</li><li>Larger cars for luggage and groups</li></ul>
           <button class="link" type="button" data-prefill="dublin-airport">Book an airport transfer <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
         </div>
       </article>
       <article class="service">
-        <div class="service__img"><img src="assets/img/race-day.webp" alt="Racehorses galloping on a grass course" loading="lazy" decoding="async"></div>
+        <div class="service__img"><img src="assets/img/country-road.webp" alt="Tree-lined country road in Ireland" loading="lazy" decoding="async"></div>
         <div class="service__body">
-          <h3>Curragh &amp; Punchestown race days</h3>
-          <p>Skip the car-park queues. Book your drop-off and a pickup after the last race.</p>
-          <button class="link" type="button" data-prefill="curragh">Book a race-day cab <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <h3>Local rides</h3>
+          <p>Shops, the doctor, a quick hop across the village — or on to Naas, Newbridge and Ballymore Eustace.</p>
+          <button class="link" type="button" data-prefill="naas">Book a local ride <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
         </div>
       </article>
       <article class="service">
-        <div class="service__img"><img src="assets/img/country-road.webp" alt="Tree-lined country road in Ireland" loading="lazy" decoding="async"></div>
+        <div class="service__img"><img src="assets/img/school-sign.webp" alt="Irish road sign warning of a school and children crossing" loading="lazy" decoding="async"></div>
         <div class="service__body">
-          <h3>Local trips across Kildare</h3>
-          <p>Naas, Newbridge, Athy and every road between — shops, appointments and the train.</p>
-          <button class="link" type="button" data-prefill="newbridge-station">Book a local trip <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <h3>School runs</h3>
+          <p>A dependable lift to and from the school gates. Set up a regular run for the term.</p>
+          <button class="link" type="button" data-note="School run — school name, days and times: ">Book a school run <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
         </div>
       </article>
       <article class="service service--wide">
-        <div class="service__img"><img src="assets/img/night-rank.webp" alt="Taxis waiting at a rank at night" loading="lazy" decoding="async"></div>
+        <div class="service__img"><img src="assets/img/race-day.webp" alt="Racehorses galloping on a grass course" loading="lazy" decoding="async"></div>
         <div class="service__body">
-          <h3>Nights out &amp; late finishes</h3>
-          <p>Pre-book your ride home from Naas, Newbridge or Dublin, so you're not waiting at a rank at 2am. Late-night trips use the NTA premium rate.</p>
-          <button class="link" type="button" data-prefill="naas">Book your ride home <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <h3>Race days, gigs &amp; nights out</h3>
+          <p>Races at the Curragh and Punchestown, gigs and the odd fair — we get you there, and home again. Late-night trips use the NTA premium rate.</p>
+          <button class="link" type="button" data-prefill="curragh">Book an event cab <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
         </div>
       </article>
     </div>
@@ -310,8 +315,10 @@
       </div>
     </div>
     <div class="faq">
-      <details open><summary>How do I book a cab?</summary><p>Fill in the booking form at the top of this page, send us a WhatsApp message or call. Your booking is confirmed once we reply with your price and pickup time.</p></details>
+      <details open><summary>Are you open every day?</summary><p>Yes — Kilcullen Cabs runs 7 days a week. Call 089 245 8888 or 045 483 333, or send your booking with the form at the top of this page.</p></details>
+      <details><summary>How do I book a cab?</summary><p>Fill in the booking form at the top of this page, send us a WhatsApp message or call. Your booking is confirmed once we reply with your price and pickup time.</p></details>
       <details><summary>How far ahead should I book?</summary><p>For airport runs and race days, book at least a day ahead — those are our busiest trips. For local journeys, a few hours' notice is usually enough, but it's always worth asking if you need a cab sooner.</p></details>
+      <details><summary>Do you do school runs?</summary><p>Yes — a dependable lift to and from the school gates. Tell us the school, the days and the times when you book, and we'll set up a regular run.</p></details>
       <details><summary>How much will my journey cost?</summary><p>The booking form shows a guide price for popular destinations, based on the NTA's maximum fares and including the €3 booking fee. We confirm the exact price before you travel, and it will never be more than the NTA maximum.</p></details>
       <details><summary>Can you collect me from Dublin Airport?</summary><p>Yes. Add your flight number when you book so we can time the pickup to your landing, and tell us which terminal you're arriving at.</p></details>
       <details><summary>How can I pay?</summary><p>Tell us how you'd like to pay when you book and we'll confirm the options for your trip.</p></details>
@@ -327,7 +334,8 @@
   <div class="wrap">
     <div>
       <h2 id="call-title">Need a cab now?</h2>
-      <a class="callband__phone" href="#book" data-call data-phone-text>045 XXX XXX</a>
+      <a class="callband__phone" href="tel:+353892458888" data-call data-phone-text>089 245 8888</a>
+      <a class="callband__landline" href="tel:+35345483333" data-landline>or <span data-landline-text>045 483 333</span> · 7 days a week</a>
     </div>
     <div class="callband__actions">
       <a class="btn btn--amber" href="#book" data-call><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>Call now</a>
@@ -343,7 +351,7 @@
     <div class="footer__grid">
       <div>
         <a class="brand" href="#top"><svg class="brand__light" viewBox="0 0 50 30" aria-hidden="true" style="color:#fff"><use href="#kc-light"/></svg><span class="brand__name">Kilcullen Cabs<span class="brand__place"><i>Cill Chuillinn</i> · Co. Kildare</span></span></a>
-        <p class="footer__tag">Local taxis for Kilcullen and County Kildare — airport runs, race days and everyday trips.</p>
+        <p class="footer__tag">Friendlier, faster and always on time — the cabs the village actually trusts.</p>
       </div>
       <div>
         <h3>Book</h3>
@@ -356,16 +364,17 @@
       <div>
         <h3>Contact</h3>
         <ul>
-          <li><a href="#book" data-call data-phone-text>045 XXX XXX</a></li>
+          <li><a href="tel:+353892458888" data-call data-phone-text>089 245 8888</a></li>
+          <li><a href="tel:+35345483333" data-landline data-landline-text>045 483 333</a></li>
           <li><a href="#book" data-wa>WhatsApp</a></li>
-          <li><a href="#book" data-email data-email-text>Email — add address</a></li>
-          <li>Kilcullen, Co. Kildare</li>
+          <li data-email-item><a href="#book" data-email data-email-text>Email</a></li>
+          <li>Kilcullen, Co. Kildare · 7 days a week</li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
       <span>© 2026 Kilcullen Cabs. All rights reserved.</span>
-      <span>NTA SPSV licence no. — add before launch</span>
+      <span>Kilcullen Cabs · a local service</span>
     </div>
   </div>
 </footer>

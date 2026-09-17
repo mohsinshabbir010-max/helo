@@ -1,11 +1,14 @@
 /* Kilcullen Cabs — site data. Edit contact details, destinations and fares here. */
 
 window.KC_CONFIG = {
-  // Fill these in before launch. Phone in international format, digits only for WhatsApp.
-  phoneDisplay: "045 XXX XXX",
-  phoneTel: "", // e.g. "+35345123456"
-  whatsapp: "", // e.g. "353871234567"
-  email: "", // e.g. "bookings@kilcullencabs.ie"
+  phoneDisplay: "089 245 8888", // mobile — main booking line
+  phoneTel: "+353892458888",
+  landlineDisplay: "045 483 333",
+  landlineTel: "+35345483333",
+  whatsapp: "353892458888", // same mobile; clear this if the number isn't on WhatsApp
+  sms: "+353892458888",
+  email: "", // add a bookings email to show email options
+  openDays: "7 days a week",
 };
 
 /* National Maximum Taxi Fare set by the National Transport Authority (in force from 1 December 2024).
@@ -34,6 +37,8 @@ window.KC_PLACES = [
   { id: "carlow", name: "Carlow", ga: "Ceatharlach", km: 41, min: 39, sign: "motorway", route: "M9", x: -12.1, y: -32 },
   { id: "naas", name: "Naas", ga: "An Nás", km: 13, min: 17, sign: "national", route: "R448", x: 5.2, y: 9.4 },
   { id: "newbridge", name: "Newbridge", ga: "An Droichead Nua", km: 9, min: 13, sign: "national", route: "R445", x: -3.5, y: 5.6 },
+  { id: "ballymore-eustace", name: "Ballymore Eustace", ga: "An Baile Mór", km: 10, min: 13, sign: "national", route: "R413", x: 8.7, y: 0.4 },
+  { id: "old-kilcullen", name: "Old Kilcullen", ga: "", km: 3, min: 5, sign: "national", route: "Local", x: -1.1, y: -2.2 },
   { id: "newbridge-station", name: "Newbridge Station", ga: "Stáisiún an Droichid Nua", km: 10, min: 14, sign: "national", route: "Rail", x: -4.2, y: 6.1 },
   { id: "sallins-station", name: "Sallins & Naas Station", ga: "Na Solláin", km: 18, min: 23, sign: "national", route: "Rail", x: 5.2, y: 12.9 },
   { id: "athy", name: "Athy", ga: "Baile Átha Í", km: 24, min: 29, sign: "national", route: "R418", x: -16.2, y: -15.3 },

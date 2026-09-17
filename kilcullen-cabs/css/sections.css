@@ -177,3 +177,13 @@ tbody th small { display: block; font-weight: 500; color: var(--ink-3); font-siz
   .footer__grid { grid-template-columns: 1fr; }
   .callband .wrap { flex-direction: column; align-items: flex-start; }
 }
+
+/* ---------- Additions: open status, areas, landline, odd sign groups ---------- */
+.topbar__dot--open { background: #3fbf8f; box-shadow: 0 0 10px #3fbf8f; }
+.hero__tap { margin-top: 10px; font-size: 0.8125rem; font-weight: 600; color: #9fb2c8; letter-spacing: 0.02em; }
+.sign--span { grid-column: 1 / -1; }
+.areas-title { margin-top: 14px; font-size: 0.75rem !important; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3) !important; }
+.areas { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.areas li { font-size: 0.8125rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); }
+.callband__landline { display: block; margin-top: 6px; color: #d9e3ef; font-weight: 700; text-decoration: none; }
+.callband__landline:hover { color: var(--amber); }
