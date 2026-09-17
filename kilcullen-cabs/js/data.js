@@ -1,0 +1,43 @@
+/* Kilcullen Cabs — site data. Edit contact details, destinations and fares here. */
+
+window.KC_CONFIG = {
+  // Fill these in before launch. Phone in international format, digits only for WhatsApp.
+  phoneDisplay: "045 XXX XXX",
+  phoneTel: "", // e.g. "+35345123456"
+  whatsapp: "", // e.g. "353871234567"
+  email: "", // e.g. "bookings@kilcullencabs.ie"
+};
+
+/* National Maximum Taxi Fare set by the National Transport Authority (in force from 1 December 2024).
+   Initial charge covers the first 500 m. "near" applies up to 15 km in total, "far" beyond 15 km. */
+window.KC_TARIFFS = {
+  standard: { label: "Standard rate", when: "Mon–Sat, 8am–8pm", initial: 4.4, near: 1.32, far: 1.72 },
+  premium: { label: "Premium rate", when: "Mon–Sat 8pm–8am, Sundays & public holidays", initial: 5.4, near: 1.81, far: 2.2 },
+  special: { label: "Special rate", when: "Sat & Sun midnight–4am, Christmas Eve & New Year's Eve nights", initial: 5.4, near: 2.2, far: 2.2 },
+  bookingFee: 3,
+  extraAdult: 1,
+};
+
+/* Irish public holidays (premium rate all day). */
+window.KC_HOLIDAYS = [
+  "2026-01-01", "2026-02-02", "2026-03-17", "2026-04-06", "2026-05-04", "2026-06-01", "2026-08-03", "2026-10-26", "2026-12-25", "2026-12-26",
+  "2027-01-01", "2027-02-01", "2027-03-17", "2027-03-29", "2027-05-03", "2027-06-07", "2027-08-02", "2027-10-25", "2027-12-25", "2027-12-26",
+];
+
+/* Popular journeys from Kilcullen. km/min are approximate road figures.
+   sign: "motorway" (blue), "national" (green), "tourist" (brown) — styled like Irish road signs.
+   x/y: kilometres east/north of Kilcullen, for the service-area map. */
+window.KC_PLACES = [
+  { id: "dublin-airport", name: "Dublin Airport", ga: "Aerfort Bhaile Átha Cliath", km: 55, min: 51, sign: "motorway", route: "M9 · M7 · M50", x: 33, y: 32.7, airport: true },
+  { id: "dublin-city", name: "Dublin City Centre", ga: "Baile Átha Cliath", km: 48, min: 45, sign: "motorway", route: "M9 · M7", x: 32.3, y: 24.2 },
+  { id: "heuston", name: "Heuston Station", ga: "Stáisiún Heuston", km: 45, min: 42, sign: "motorway", route: "M9 · M7", x: 30.1, y: 23.9 },
+  { id: "carlow", name: "Carlow", ga: "Ceatharlach", km: 41, min: 39, sign: "motorway", route: "M9", x: -12.1, y: -32 },
+  { id: "naas", name: "Naas", ga: "An Nás", km: 13, min: 17, sign: "national", route: "R448", x: 5.2, y: 9.4 },
+  { id: "newbridge", name: "Newbridge", ga: "An Droichead Nua", km: 9, min: 13, sign: "national", route: "R445", x: -3.5, y: 5.6 },
+  { id: "newbridge-station", name: "Newbridge Station", ga: "Stáisiún an Droichid Nua", km: 10, min: 14, sign: "national", route: "Rail", x: -4.2, y: 6.1 },
+  { id: "sallins-station", name: "Sallins & Naas Station", ga: "Na Solláin", km: 18, min: 23, sign: "national", route: "Rail", x: 5.2, y: 12.9 },
+  { id: "athy", name: "Athy", ga: "Baile Átha Í", km: 24, min: 29, sign: "national", route: "R418", x: -16.2, y: -15.3 },
+  { id: "curragh", name: "Curragh Racecourse", ga: "", km: 11, min: 15, sign: "tourist", route: "Race days", x: -7.9, y: 2 },
+  { id: "punchestown", name: "Punchestown Racecourse", ga: "", km: 12, min: 16, sign: "tourist", route: "Race days", x: 6.3, y: 5.8 },
+  { id: "kildare-village", name: "Kildare Village", ga: "", km: 15, min: 20, sign: "tourist", route: "Shopping", x: -10.4, y: 3.9 },
+];

@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NEXORA</title>
+<meta name="description" content="NEXORA is a software house, AI technology studio and digital academy. We build AI solutions, software, websites and apps — and teach AI agents, computer skills, digital marketing, freelancing and social media.">
+<meta name="theme-color" content="#08080a">
+<meta property="og:title" content="NEXORA — Build Skills. Create Technology. Shape the Future.">
+<meta property="og:description" content="Software house, AI technology hub and digital academy in one brand.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400..700&family=Michroma&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/sections-a.css">
+<link rel="stylesheet" href="css/sections-b.css">
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.add("js");
+    var skip = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    try { if (sessionStorage.getItem("nx-intro")) skip = true; } catch (e) {}
+    if (skip) d.classList.add("intro-done");
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "EducationalOrganization"],
+  "name": "NEXORA",
+  "slogan": "Build Skills. Create Technology. Shape the Future.",
+  "description": "Software house, AI technology hub and digital academy.",
+  "email": "mohsinshabbir010@gmail.com",
+  "telephone": "+92-313-5760708",
+  "knowsAbout": ["AI Solutions", "Software Development", "Website Development", "Mobile App Development", "Digital Marketing", "Social Media Management", "Branding", "Automation and AI Agents"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "NEXORA Academy",
+    "itemListElement": [
+      {"@type": "Course", "name": "AI Agents & Automation Mastery", "provider": {"@type": "Organization", "name": "NEXORA"}},
+      {"@type": "Course", "name": "Computer Skills & Office Professional", "provider": {"@type": "Organization", "name": "NEXORA"}},
+      {"@type": "Course", "name": "Performance Digital Marketing", "provider": {"@type": "Organization", "name": "NEXORA"}},
+      {"@type": "Course", "name": "Freelancing Career Accelerator", "provider": {"@type": "Organization", "name": "NEXORA"}},
+      {"@type": "Course", "name": "Social Media & Content Creator Pro", "provider": {"@type": "Organization", "name": "NEXORA"}}
+    ]
+  }
+}
+</script>
+
+<!-- Icon sprite (kept renderable so gradients resolve) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="nx-metal" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="64" y2="64">
+      <stop offset="0" stop-color="#f0dca0"/><stop offset=".38" stop-color="#c8a24a"/><stop offset=".62" stop-color="#e9ecf0"/><stop offset="1" stop-color="#9ea4ae"/>
+    </linearGradient>
+    <linearGradient id="nx-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c8a24a" stop-opacity="0"/><stop offset=".5" stop-color="#f0dca0"/><stop offset="1" stop-color="#d8dce2" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <symbol id="nx-mark" viewBox="0 0 64 64">
+    <path d="M32 3 61 32 32 61 3 32Z" fill="none" stroke="url(#nx-metal)" stroke-width="1.6"/>
+    <path d="M32 12 52 32 32 52 12 32Z" fill="rgba(200,162,74,.07)" stroke="url(#nx-metal)" stroke-width=".6" opacity=".7"/>
+    <path d="M24 41V23l16 18V23" fill="none" stroke="url(#nx-metal)" stroke-width="3.2" stroke-linecap="square"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+  <!-- services -->
+  <symbol id="s-ai" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2.5V6M15 2.5V6M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/><path d="M10 10h4v4h-4z"/></symbol>
+  <symbol id="s-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+  <symbol id="s-web" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M2.5 8.5h19M7 13h6M7 16h10"/></symbol>
+  <symbol id="s-mobile" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="s-growth" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+  <symbol id="s-social" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/></symbol>
+  <symbol id="s-brand" viewBox="0 0 24 24"><path d="M12 21 5 12l7-9 7 9z"/><path d="M12 3v8"/><circle cx="12" cy="12.5" r="1.5"/></symbol>
+  <symbol id="s-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></symbol>
+  <symbol id="s-flow" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><circle cx="18" cy="6" r="3"/><path d="M9 6h6M6 9v6a3 3 0 0 0 3 3h6"/></symbol>
+  <symbol id="s-consult" viewBox="0 0 24 24"><path d="M12 3v9h9"/><path d="M20.5 15.5A9 9 0 1 1 8.5 3.7"/></symbol>
+  <!-- agent capabilities -->
+  <symbol id="c-understand" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+  <symbol id="c-repeat" viewBox="0 0 24 24"><path d="M17 2l3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="M7 22l-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></symbol>
+  <symbol id="c-doc" viewBox="0 0 24 24"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="c-analyze" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5M8 13v-2M11 13V8M14 13v-3"/></symbol>
+  <symbol id="c-link" viewBox="0 0 24 24"><path d="M9 7H6a5 5 0 0 0 0 10h3M15 7h3a5 5 0 0 1 0 10h-3M8 12h8"/></symbol>
+  <symbol id="c-report" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></symbol>
+  <symbol id="c-assist" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6z"/></symbol>
+  <!-- technology -->
+  <symbol id="t-python" viewBox="0 0 24 24"><path d="M12 3H9.5A3.5 3.5 0 0 0 6 6.5V9h6.5M12 21h2.5a3.5 3.5 0 0 0 3.5-3.5V15h-6.5"/><path d="M6 9H5.5A2.5 2.5 0 0 0 3 11.5v1A2.5 2.5 0 0 0 5.5 15H8M18 15h.5a2.5 2.5 0 0 0 2.5-2.5v-1A2.5 2.5 0 0 0 18.5 9H16M12 3h2.5A3.5 3.5 0 0 1 18 6.5V9M12 21H9.5A3.5 3.5 0 0 1 6 17.5V15"/><circle cx="9.5" cy="6" r=".4"/><circle cx="14.5" cy="18" r=".4"/></symbol>
+  <symbol id="t-js" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M11 10v5.5a2 2 0 0 1-3.5 1.3M19 11a2.2 2.2 0 0 0-2-1c-1.3 0-2.2.7-2.2 1.7 0 2.3 4.4 1.3 4.4 3.8 0 1-.9 1.8-2.3 1.8a2.6 2.6 0 0 1-2.3-1.2"/></symbol>
+  <symbol id="t-react" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="1.5"/></symbol>
+  <symbol id="t-node" viewBox="0 0 24 24"><path d="M12 2.5l8.5 4.9v9.2L12 21.5l-8.5-4.9V7.4z"/><path d="M9.5 15.5V9l5 6.5V9"/></symbol>
+  <symbol id="t-cloud" viewBox="0 0 24 24"><path d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.3 9.7 4.5 4.5 0 0 0 7 18.5z"/></symbol>
+  <symbol id="t-api" viewBox="0 0 24 24"><path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"/></symbol>
+  <symbol id="t-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+  <symbol id="t-shield" viewBox="0 0 24 24"><path d="M12 2.5l8 3v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <!-- social + contact -->
+  <symbol id="g-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></symbol>
+  <symbol id="g-facebook" viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-3.5H14V7.6c0-1 .3-1.7 1.8-1.7h1.8V2.8A24 24 0 0 0 15 2.6c-2.6 0-4.4 1.6-4.4 4.5v2.4H7.7V13h2.9v8"/></symbol>
+  <symbol id="g-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></symbol>
+  <symbol id="g-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5V17M7.5 7.3v.1M11.5 17v-6.5M11.5 13.2c0-1.6 1.1-2.7 2.5-2.7s2.5 1 2.5 2.7V17"/></symbol>
+  <symbol id="g-tiktok" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6"/></symbol>
+  <symbol id="g-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 12 20a8 8 0 0 1-4-1.1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-2-2l.8-1-1-2z"/></symbol>
+  <symbol id="g-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></symbol>
+  <symbol id="g-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="g-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Opening sequence -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__stage">
+    <svg class="intro__mark" viewBox="0 0 64 64"><use href="#nx-mark"/></svg>
+    <div class="intro__word"><span style="animation-delay:.55s">N</span><span style="animation-delay:.62s">E</span><span style="animation-delay:.69s">X</span><span style="animation-delay:.76s">O</span><span style="animation-delay:.83s">R</span><span style="animation-delay:.9s">A</span></div>
+    <div class="intro__line"></div>
+  </div>
+  <button class="intro__skip" type="button" id="intro-skip" tabindex="-1">Skip intro</button>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__bar">
+    <a class="brand" href="#top" aria-label="NEXORA home">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#nx-mark"/></svg>NEXORA
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#academy">Academy</a>
+      <a href="#agents">AI Agents</a>
+      <a href="#work">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--gold btn--sm" href="#contact">Build With Us</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu"><span></span><b class="sr-only">Menu</b></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <a href="#services">What We Do</a>
+  <a href="#academy">Academy</a>
+  <a href="#agents">AI Agents</a>
+  <a href="#work">Projects</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn--gold" href="#contact">Build With Us</a>
+</div>
+
+<nav class="rail" id="rail" aria-label="Slides"></nav>
+
+<main id="main">
+
+<!-- 01 · Hero -->
+<section class="hero" id="top" data-slide="Intro">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__glow"></div>
+    <svg class="hero__lines" viewBox="0 0 1440 900" preserveAspectRatio="none">
+      <path d="M-40 720C300 650 520 400 900 430S1300 220 1500 170"/>
+      <path d="M-40 520C260 560 560 300 860 300S1240 520 1500 470"/>
+      <path d="M-40 260C320 200 600 480 980 560S1320 700 1500 760"/>
+    </svg>
+    <div class="hero__grid"></div>
+  </div>
+
+  <div class="wrap hero__layout">
+    <div class="hero__copy">
+      <p class="eyebrow hero__kicker"><span class="eyebrow__idx">01</span> Software House · AI Hub · Academy</p>
+      <h1 class="hero__word" aria-label="NEXORA"><span style="--k:0" aria-hidden="true">N</span><span style="--k:1" aria-hidden="true">E</span><span style="--k:2" aria-hidden="true">X</span><span style="--k:3" aria-hidden="true">O</span><span style="--k:4" aria-hidden="true">R</span><span style="--k:5" aria-hidden="true">A</span></h1>
+      <p class="hero__tag">Build Skills. Create Technology. <em>Shape the Future.</em></p>
+      <ul class="hero__pillars" aria-label="What we do">
+        <li>AI</li><li>Technology</li><li>Digital Skills</li><li>Creative Innovation</li>
+      </ul>
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="#academy">Explore Courses <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost" href="#contact">Build With Us</a>
+      </div>
+      <p class="hero__proof"><span><b>10</b> technology services</span><span><b>5</b> career-focused academy tracks</span><span><b>1</b> team that builds what it teaches</span></p>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="orbit"></div>
+      <div class="orbit orbit--2"></div>
+      <canvas class="hero__canvas" id="core-canvas"></canvas>
+      <span class="float-chip float-chip--a"><i></i>agent.run(&quot;automate&quot;)</span>
+      <span class="float-chip float-chip--b"><i></i>Academy · AI Agents</span>
+      <span class="float-chip float-chip--c"><i></i>build → deploy</span>
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#services"><span></span>Scroll to begin</a>
+</section>
+
+<!-- Photo reel -->
+<div class="reel" role="region" aria-label="What we do at NEXORA">
+  <div class="reel__track">
+    <div class="reel__set"><figure class="reel__item"><img src="assets/img/course-ai-agents.webp" alt="" loading="lazy" decoding="async"><figcaption>AI Agents</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-web.webp" alt="" loading="lazy" decoding="async"><figcaption>Web Development</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-mobile.webp" alt="" loading="lazy" decoding="async"><figcaption>Mobile Apps</figcaption></figure><figure class="reel__item"><img src="assets/img/course-marketing.webp" alt="" loading="lazy" decoding="async"><figcaption>Digital Marketing</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-branding.webp" alt="" loading="lazy" decoding="async"><figcaption>Branding</figcaption></figure><figure class="reel__item"><img src="assets/img/course-freelancing.webp" alt="" loading="lazy" decoding="async"><figcaption>Freelancing</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-automation.webp" alt="" loading="lazy" decoding="async"><figcaption>Automation</figcaption></figure><figure class="reel__item"><img src="assets/img/course-social.webp" alt="" loading="lazy" decoding="async"><figcaption>Content Creation</figcaption></figure><figure class="reel__item"><img src="assets/img/course-computer.webp" alt="" loading="lazy" decoding="async"><figcaption>Computer Courses</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-consulting.webp" alt="" loading="lazy" decoding="async"><figcaption>Consulting</figcaption></figure></div>
+    <div class="reel__set" aria-hidden="true"><figure class="reel__item"><img src="assets/img/course-ai-agents.webp" alt="" loading="lazy" decoding="async"><figcaption>AI Agents</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-web.webp" alt="" loading="lazy" decoding="async"><figcaption>Web Development</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-mobile.webp" alt="" loading="lazy" decoding="async"><figcaption>Mobile Apps</figcaption></figure><figure class="reel__item"><img src="assets/img/course-marketing.webp" alt="" loading="lazy" decoding="async"><figcaption>Digital Marketing</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-branding.webp" alt="" loading="lazy" decoding="async"><figcaption>Branding</figcaption></figure><figure class="reel__item"><img src="assets/img/course-freelancing.webp" alt="" loading="lazy" decoding="async"><figcaption>Freelancing</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-automation.webp" alt="" loading="lazy" decoding="async"><figcaption>Automation</figcaption></figure><figure class="reel__item"><img src="assets/img/course-social.webp" alt="" loading="lazy" decoding="async"><figcaption>Content Creation</figcaption></figure><figure class="reel__item"><img src="assets/img/course-computer.webp" alt="" loading="lazy" decoding="async"><figcaption>Computer Courses</figcaption></figure><figure class="reel__item"><img src="assets/img/svc-consulting.webp" alt="" loading="lazy" decoding="async"><figcaption>Consulting</figcaption></figure></div>
+  </div>
+</div>
+
+<!-- 02 · Services -->
+<section class="slide" id="services" data-slide="What We Do">
+  <div class="wrap slide__inner">
+    <header class="slide__head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__idx">02</span> What We Do</p>
+        <h2 class="title">Technology, built with <em>intent.</em></h2>
+      </div>
+      <p class="lede">One studio for the AI, software, marketing and creative work a modern business runs on. Hover or tap a service to see what's included.</p>
+    </header>
+
+    <div class="services" id="services-grid">
+      <article class="svc svc--xl">
+        <img class="svc__img" src="assets/img/svc-ai.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-ai"/></svg>
+        <div>
+          <h3 class="svc__title">AI Solutions</h3>
+          <p class="svc__sum">Custom AI that reads, writes, predicts and decides — built into the way your business already works.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-ai"><span class="sr-only">Details: AI Solutions</span></button>
+        <div class="svc__more" id="svc-ai"><ul><li>Assistants trained on your own documents</li><li>Document, image and voice understanding</li><li>Forecasts and smart recommendations</li></ul></div>
+      </article>
+
+      <article class="svc svc--wide">
+        <img class="svc__img" src="assets/img/svc-software.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-code"/></svg>
+        <div>
+          <h3 class="svc__title">Software Development</h3>
+          <p class="svc__sum">Business software, portals and internal tools engineered to scale with you.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-sw"><span class="sr-only">Details: Software Development</span></button>
+        <div class="svc__more" id="svc-sw"><ul><li>ERP, CRM and inventory systems</li><li>Client portals and dashboards</li><li>Cloud architecture and APIs</li></ul></div>
+      </article>
+
+      <article class="svc">
+        <img class="svc__img" src="assets/img/svc-web.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-web"/></svg>
+        <div>
+          <h3 class="svc__title">Website Development</h3>
+          <p class="svc__sum">Fast, search-ready websites that look premium and convert.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-web"><span class="sr-only">Details: Website Development</span></button>
+        <div class="svc__more" id="svc-web"><ul><li>Corporate and e-commerce sites</li><li>Landing pages built to convert</li><li>SEO and speed built in</li></ul></div>
+      </article>
+
+      <article class="svc">
+        <img class="svc__img" src="assets/img/svc-mobile.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-mobile"/></svg>
+        <div>
+          <h3 class="svc__title">Mobile App Development</h3>
+          <p class="svc__sum">iOS and Android apps with polished interfaces and reliable back-ends.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-app"><span class="sr-only">Details: Mobile App Development</span></button>
+        <div class="svc__more" id="svc-app"><ul><li>Cross-platform apps</li><li>App Store and Play Store launch</li><li>Payments and notifications</li></ul></div>
+      </article>
+
+      <article class="svc">
+        <img class="svc__img" src="assets/img/svc-marketing.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-growth"/></svg>
+        <div>
+          <h3 class="svc__title">Digital Marketing</h3>
+          <p class="svc__sum">Campaigns measured in leads and revenue, not impressions.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-mkt"><span class="sr-only">Details: Digital Marketing</span></button>
+        <div class="svc__more" id="svc-mkt"><ul><li>SEO and Google Ads</li><li>Meta ads and retargeting</li><li>Analytics and monthly reports</li></ul></div>
+      </article>
+
+      <article class="svc">
+        <img class="svc__img" src="assets/img/svc-social.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-social"/></svg>
+        <div>
+          <h3 class="svc__title">Social Media Management</h3>
+          <p class="svc__sum">On-brand content that grows audiences on every platform.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-smm"><span class="sr-only">Details: Social Media Management</span></button>
+        <div class="svc__more" id="svc-smm"><ul><li>Content calendars and design</li><li>Reels and short-form video</li><li>Community management</li></ul></div>
+      </article>
+
+      <article class="svc svc--wide">
+        <img class="svc__img" src="assets/img/svc-automation.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-flow"/></svg>
+        <div>
+          <h3 class="svc__title">Automation &amp; AI Agents</h3>
+          <p class="svc__sum">AI agents that take repetitive work off your team — around the clock.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-auto"><span class="sr-only">Details: Automation and AI Agents</span></button>
+        <div class="svc__more" id="svc-auto"><ul><li>Lead follow-up and support agents</li><li>Invoice, report and data-entry automation</li><li>Workflows across email, sheets and CRM</li></ul></div>
+      </article>
+
+      <article class="svc">
+        <img class="svc__img" src="assets/img/svc-branding.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-brand"/></svg>
+        <div>
+          <h3 class="svc__title">Branding &amp; Creative Design</h3>
+          <p class="svc__sum">Identities with presence, and creative people remember.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-brand"><span class="sr-only">Details: Branding and Creative Design</span></button>
+        <div class="svc__more" id="svc-brand"><ul><li>Logo and brand identity</li><li>Brand guidelines</li><li>Print, packaging and motion</li></ul></div>
+      </article>
+
+      <article class="svc">
+        <img class="svc__img" src="assets/img/svc-freelancing.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-globe"/></svg>
+        <div>
+          <h3 class="svc__title">Freelancing Solutions</h3>
+          <p class="svc__sum">Profiles and systems that win international clients.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-free"><span class="sr-only">Details: Freelancing Solutions</span></button>
+        <div class="svc__more" id="svc-free"><ul><li>Upwork and Fiverr setup</li><li>Portfolio and proposal systems</li><li>Mentoring for first contracts</li></ul></div>
+      </article>
+
+      <article class="svc svc--wide">
+        <img class="svc__img" src="assets/img/svc-consulting.webp" alt="" loading="lazy" decoding="async">
+        <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#s-consult"/></svg>
+        <div>
+          <h3 class="svc__title">Business Technology Consulting</h3>
+          <p class="svc__sum">A clear roadmap — what to build, buy and automate, and in what order.</p>
+        </div>
+        <button class="svc__toggle" type="button" aria-expanded="false" aria-controls="svc-cons"><span class="sr-only">Details: Business Technology Consulting</span></button>
+        <div class="svc__more" id="svc-cons"><ul><li>Digital transformation strategy</li><li>AI readiness assessment</li><li>Tool selection and cost review</li></ul></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · Academy -->
+<section class="slide" id="academy" data-slide="Academy">
+  <div class="wrap slide__inner">
+    <header class="slide__head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__idx">03</span> Learn With Us</p>
+        <h2 class="academy__brand metal-text" style="font-style:normal">NEXORA ACADEMY</h2>
+        <p class="academy__sub">Learn the skills powering the digital world.</p>
+      </div>
+      <p class="lede">Taught by the same people who build for NEXORA clients. Every track ends with real projects and a certificate — open any course for the full curriculum.</p>
+    </header>
+
+    <div class="courses">
+      <article class="course-card course-card--feature">
+        <img class="course-card__bg" src="assets/img/course-ai-agents.webp" alt="" loading="lazy" decoding="async">
+        <p class="course-card__track">AI Agent Course · Flagship</p>
+        <h3 class="course-card__title">AI Agents &amp; Automation Mastery</h3>
+        <p class="course-card__desc">Build AI agents that answer customers, process documents and run workflows — then learn to sell them as a service.</p>
+        <ul class="course-card__topics">
+          <li class="chip chip--gold">AI Agents</li><li class="chip">AI Automation</li><li class="chip">AI Workflows</li><li class="chip">AI Tools</li><li class="chip">AI Assistants</li><li class="chip">Prompt Engineering</li><li class="chip">AI APIs</li><li class="chip">AI Business Solutions</li>
+        </ul>
+        <p class="course-card__meta"><span>12 weeks</span><span>Beginner → Advanced</span><span>Certificate</span></p>
+        <div class="course-card__cta"><span class="link-arrow">View course <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+        <a class="course-card__open" href="#course/ai-agents"><span class="sr-only">View course: AI Agents and Automation Mastery</span></a>
+      </article>
+
+      <article class="course-card">
+        <div class="course-card__media"><img src="assets/img/course-computer.webp" alt="" loading="lazy" decoding="async"></div>
+        <p class="course-card__track">Computer Courses</p>
+        <h3 class="course-card__title">Computer Skills &amp; Office Professional</h3>
+        <ul class="course-card__topics"><li class="chip">MS Office</li><li class="chip">Advanced Excel</li><li class="chip">Graphic Design</li><li class="chip">+5 more</li></ul>
+        <p class="course-card__meta"><span>10 weeks</span><span>Beginner</span></p>
+        <a class="course-card__open" href="#course/computer"><span class="sr-only">View course: Computer Skills and Office Professional</span></a>
+      </article>
+
+      <article class="course-card">
+        <div class="course-card__media"><img src="assets/img/course-marketing.webp" alt="" loading="lazy" decoding="async"></div>
+        <p class="course-card__track">Digital Marketing</p>
+        <h3 class="course-card__title">Performance Digital Marketing</h3>
+        <ul class="course-card__topics"><li class="chip">SEO</li><li class="chip">Google Ads</li><li class="chip">Meta Ads</li><li class="chip">+5 more</li></ul>
+        <p class="course-card__meta"><span>10 weeks</span><span>Beginner → Intermediate</span></p>
+        <a class="course-card__open" href="#course/marketing"><span class="sr-only">View course: Performance Digital Marketing</span></a>
+      </article>
+
+      <article class="course-card">
+        <div class="course-card__media"><img src="assets/img/course-freelancing.webp" alt="" loading="lazy" decoding="async"></div>
+        <p class="course-card__track">Freelancing</p>
+        <h3 class="course-card__title">Freelancing Career Accelerator</h3>
+        <ul class="course-card__topics"><li class="chip">Upwork</li><li class="chip">Fiverr</li><li class="chip">Proposals</li><li class="chip">+5 more</li></ul>
+        <p class="course-card__meta"><span>8 weeks</span><span>All levels</span></p>
+        <a class="course-card__open" href="#course/freelancing"><span class="sr-only">View course: Freelancing Career Accelerator</span></a>
+      </article>
+
+      <article class="course-card">
+        <div class="course-card__media"><img src="assets/img/course-social.webp" alt="" loading="lazy" decoding="async"></div>
+        <p class="course-card__track">Social Media</p>
+        <h3 class="course-card__title">Social Media &amp; Content Creator Pro</h3>
+        <ul class="course-card__topics"><li class="chip">Instagram</li><li class="chip">TikTok</li><li class="chip">Reels &amp; Shorts</li><li class="chip">+6 more</li></ul>
+        <p class="course-card__meta"><span>8 weeks</span><span>Beginner → Intermediate</span></p>
+        <a class="course-card__open" href="#course/social"><span class="sr-only">View course: Social Media and Content Creator Pro</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · AI Agent showcase -->
+<section class="slide agents" id="agents" data-slide="AI Agents">
+  <div class="wrap slide__inner">
+    <header class="slide__head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__idx">04</span> AI Agent Showcase</p>
+        <h2 class="title">Meet the <em>Future of Work.</em></h2>
+      </div>
+      <p class="lede">An AI agent is a digital team member: give it an instruction and it plans the steps, uses your tools and reports back. Pick a scenario and watch one work.</p>
+    </header>
+
+    <div class="agents__layout">
+      <ul class="caps" id="caps" aria-label="What an AI agent can do">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#c-understand"/></svg><span>Understands instructions</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#c-repeat"/></svg><span>Automates repetitive tasks</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#c-doc"/></svg><span>Works with documents</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#c-analyze"/></svg><span>Analyzes information</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#s-flow"/></svg><span>Manages workflows</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#c-link"/></svg><span>Connects different tools</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#c-report"/></svg><span>Generates reports</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#c-assist"/></svg><span>Assists businesses</span></li>
+      </ul>
+
+      <div>
+        <div class="console metal-border" id="console">
+          <div class="console__top">
+            <span class="console__id"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#nx-mark"/></svg>nexora-agent</span>
+            <span class="live">Live demo</span>
+          </div>
+          <div class="console__tabs" role="tablist" aria-label="Demo scenarios" id="console-tabs"></div>
+          <div class="console__body" id="console-body" role="tabpanel"></div>
+        </div>
+        <p class="note demo-note">Demonstration scenarios showing how a NEXORA agent works.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · Technology -->
+<section class="slide tech" id="tech" data-slide="Technology">
+  <div class="wrap slide__inner">
+    <header class="slide__head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__idx">05</span> Our Stack</p>
+        <h2 class="title">Technology That Moves <em>Businesses Forward</em></h2>
+      </div>
+      <p class="lede">A focused stack we know deeply, instead of a long list we know loosely. Hover or tap a technology to see what we use it for.</p>
+    </header>
+
+    <div class="orbit-map" id="orbit">
+      <div class="ring ring--outer">
+        <div class="node" style="--a:-30deg"><div class="node__inner"><button type="button" data-tech="cloud" aria-label="Cloud" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#t-cloud"/></svg></button><span class="node__label">Cloud</span></div></div>
+        <div class="node" style="--a:30deg"><div class="node__inner"><button type="button" data-tech="automation" aria-label="Automation" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#s-flow"/></svg></button><span class="node__label">Automation</span></div></div>
+        <div class="node" style="--a:90deg"><div class="node__inner"><button type="button" data-tech="apis" aria-label="APIs" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#t-api"/></svg></button><span class="node__label">APIs</span></div></div>
+        <div class="node" style="--a:150deg"><div class="node__inner"><button type="button" data-tech="databases" aria-label="Databases" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#t-db"/></svg></button><span class="node__label">Databases</span></div></div>
+        <div class="node" style="--a:210deg"><div class="node__inner"><button type="button" data-tech="security" aria-label="Cybersecurity" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#t-shield"/></svg></button><span class="node__label">Cybersecurity</span></div></div>
+        <div class="node" style="--a:270deg"><div class="node__inner"><button type="button" data-tech="analytics" aria-label="Analytics" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#c-report"/></svg></button><span class="node__label">Analytics</span></div></div>
+      </div>
+      <div class="ring ring--inner">
+        <div class="node" style="--a:-90deg"><div class="node__inner"><button type="button" data-tech="ai" aria-label="AI" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#s-ai"/></svg></button><span class="node__label">AI</span></div></div>
+        <div class="node" style="--a:-18deg"><div class="node__inner"><button type="button" data-tech="python" aria-label="Python" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#t-python"/></svg></button><span class="node__label">Python</span></div></div>
+        <div class="node" style="--a:54deg"><div class="node__inner"><button type="button" data-tech="javascript" aria-label="JavaScript" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#t-js"/></svg></button><span class="node__label">JavaScript</span></div></div>
+        <div class="node" style="--a:126deg"><div class="node__inner"><button type="button" data-tech="react" aria-label="React" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#t-react"/></svg></button><span class="node__label">React</span></div></div>
+        <div class="node" style="--a:198deg"><div class="node__inner"><button type="button" data-tech="node" aria-label="Node.js" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#t-node"/></svg></button><span class="node__label">Node.js</span></div></div>
+      </div>
+      <div class="core" id="core" aria-live="polite">
+        <div>
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#nx-mark"/></svg>
+          <p class="core__name">The NEXORA stack</p>
+          <p class="core__desc">Choose any technology on the orbit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · Why NEXORA -->
+<section class="slide why" id="why" data-slide="Why NEXORA">
+  <div class="why__sticky">
+    <div class="wrap">
+      <header class="slide__head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__idx">06</span> The Difference</p>
+          <h2 class="title">Why Choose <em>NEXORA?</em></h2>
+        </div>
+        <p class="lede">Four commitments that shape every course we teach and every product we ship.</p>
+      </header>
+      <div class="why__track" id="why-track">
+        <article class="panel metal-border">
+          <img class="panel__img" src="assets/img/why-future.webp" alt="" loading="lazy" decoding="async">
+          <svg class="panel__line" viewBox="0 0 200 200" fill="none" stroke="#c8a24a" stroke-opacity=".3" aria-hidden="true"><path d="M0 200 200 0M40 200 200 40M80 200 200 80M120 200 200 120"/></svg>
+          <span class="panel__num" aria-hidden="true">01</span>
+          <h3 class="panel__title">Future-Ready Skills</h3>
+          <p>We teach what the market is hiring for next — AI agents, automation and performance marketing — alongside the fundamentals that never go out of date.</p>
+          <ul><li class="chip">AI &amp; automation</li><li class="chip">Updated every cohort</li></ul>
+        </article>
+        <article class="panel metal-border">
+          <img class="panel__img" src="assets/img/why-practical.webp" alt="" loading="lazy" decoding="async">
+          <svg class="panel__line" viewBox="0 0 200 200" fill="none" stroke="#d8dce2" stroke-opacity=".25" aria-hidden="true"><circle cx="200" cy="0" r="60"/><circle cx="200" cy="0" r="110"/><circle cx="200" cy="0" r="160"/></svg>
+          <span class="panel__num" aria-hidden="true">02</span>
+          <h3 class="panel__title">Practical Learning</h3>
+          <p>Less lecture, more doing. Every session ends with something built, and every module is taught by people who use these skills on client work.</p>
+          <ul><li class="chip">Hands-on labs</li><li class="chip">Small batches</li></ul>
+        </article>
+        <article class="panel metal-border">
+          <img class="panel__img" src="assets/img/why-projects.webp" alt="" loading="lazy" decoding="async">
+          <svg class="panel__line" viewBox="0 0 200 200" fill="none" stroke="#c8a24a" stroke-opacity=".3" aria-hidden="true"><rect x="60" y="20" width="120" height="120"/><rect x="90" y="50" width="90" height="90"/><rect x="120" y="80" width="60" height="60"/></svg>
+          <span class="panel__num" aria-hidden="true">03</span>
+          <h3 class="panel__title">Real-World Projects</h3>
+          <p>Students graduate with a portfolio of working projects — agents, campaigns, dashboards and sites — not just a certificate.</p>
+          <ul><li class="chip">Portfolio-ready</li><li class="chip">Client-style briefs</li></ul>
+        </article>
+        <article class="panel metal-border">
+          <img class="panel__img" src="assets/img/why-career.webp" alt="" loading="lazy" decoding="async">
+          <svg class="panel__line" viewBox="0 0 200 200" fill="none" stroke="#d8dce2" stroke-opacity=".25" aria-hidden="true"><path d="M10 190 70 130 110 150 190 40"/><path d="M150 40h40v40"/></svg>
+          <span class="panel__num" aria-hidden="true">04</span>
+          <h3 class="panel__title">Digital Career Growth</h3>
+          <p>From freelancing profiles to job interviews to launching a service business, we stay with you after the final class.</p>
+          <ul><li class="chip">Career mentoring</li><li class="chip">Freelance launch support</li></ul>
+        </article>
+      </div>
+      <div class="why__progress" aria-hidden="true"><i id="why-progress"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · Impact -->
+<section class="slide" id="impact" data-slide="Impact">
+  <img class="slide__bg" src="assets/img/bg-impact.webp" alt="" loading="lazy" decoding="async">
+  <div class="wrap slide__inner">
+    <header class="slide__head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__idx">07</span> Impact</p>
+        <h2 class="title">Progress you can <em>count.</em></h2>
+      </div>
+      <p class="lede">Every number here is a person who learned a new skill or a business that now runs a little smarter.</p>
+    </header>
+    <div class="stats" id="stats">
+      <div class="stat"><p class="stat__num"><span data-count="2400">2,400</span><sup>+</sup></p><p class="stat__label">Students Trained</p></div>
+      <div class="stat"><p class="stat__num"><span data-count="180">180</span><sup>+</sup></p><p class="stat__label">Projects Completed</p></div>
+      <div class="stat"><p class="stat__num"><span data-count="120">120</span><sup>+</sup></p><p class="stat__label">Businesses Served</p></div>
+      <div class="stat"><p class="stat__num"><span data-count="35">35</span></p><p class="stat__label">Digital Skills Taught</p></div>
+    </div>
+    <p class="note stats-foot">Sample figures — replace with NEXORA's real numbers before launch.</p>
+  </div>
+</section>
+
+<!-- 08 · Success -->
+<section class="slide success" id="success" data-slide="Success">
+  <div class="wrap slide__inner stack">
+    <header class="stack__intro">
+      <p class="eyebrow"><span class="eyebrow__idx">08</span> Student &amp; Client Success</p>
+      <h2 class="title">Stories that <em>speak for us.</em></h2>
+      <p class="lede" style="margin-top:22px">Students who built new careers and clients who built better businesses. Keep scrolling — each story lands on top of the last.</p>
+      <p class="note" style="margin-top:14px">Sample stories — replace with real quotes before launch.</p>
+      <p class="stack__count" aria-hidden="true"><b id="stack-now">01</b> / 06</p>
+    </header>
+    <div class="stack__cards" id="stack">
+      <article class="story metal-border" style="--i:0">
+          <div class="story__top"><span class="story__type">Student</span><span class="chip chip--sample">Sample</span></div>
+          <blockquote>“I built a support agent for my uncle's electronics store during the course. It now answers most customer questions before he's even awake.”</blockquote>
+          <div class="story__who"><span class="story__avatar">AA</span><div><p class="story__role">AI Agents &amp; Automation</p><p class="story__ctx">Academy graduate</p></div></div>
+        </article>
+      <article class="story metal-border" style="--i:1">
+          <div class="story__top"><span class="story__type">Client</span><span class="chip chip--sample">Sample</span></div>
+          <blockquote>“NEXORA rebuilt our website and automated lead follow-up. Enquiries stopped slipping through the cracks.”</blockquote>
+          <div class="story__who"><span class="story__avatar">ID</span><div><p class="story__role">Founder</p><p class="story__ctx">Interior design studio</p></div></div>
+        </article>
+      <article class="story metal-border" style="--i:2">
+          <div class="story__top"><span class="story__type">Success Story</span><span class="chip chip--sample">Sample</span></div>
+          <div class="story__metric"><b>3×</b><span>more qualified leads in 90 days after a new website and Google Ads campaign</span></div>
+          <div class="story__who"><span class="story__avatar">RE</span><div><p class="story__role">Marketing lead</p><p class="story__ctx">Real estate agency</p></div></div>
+        </article>
+      <article class="story metal-border" style="--i:3">
+          <div class="story__top"><span class="story__type">Student</span><span class="chip chip--sample">Sample</span></div>
+          <blockquote>“The proposal frameworks changed everything. I landed my first two Upwork clients in week five.”</blockquote>
+          <div class="story__who"><span class="story__avatar">FZ</span><div><p class="story__role">Freelancing Career Accelerator</p><p class="story__ctx">Academy graduate</p></div></div>
+        </article>
+      <article class="story metal-border" style="--i:4">
+          <div class="story__top"><span class="story__type">Project Showcase</span><span class="chip chip--sample">Sample</span></div>
+          <div class="story__metric"><b>42→3</b><span>invoices needing manual review each week after an AI processing workflow</span></div>
+          <div class="story__who"><span class="story__avatar">DC</span><div><p class="story__role">Operations manager</p><p class="story__ctx">Distribution company</p></div></div>
+        </article>
+      <article class="story metal-border" style="--i:5">
+          <div class="story__top"><span class="story__type">Student</span><span class="chip chip--sample">Sample</span></div>
+          <blockquote>“I came in knowing nothing about ads. I left running campaigns for two local businesses.”</blockquote>
+          <div class="story__who"><span class="story__avatar">HS</span><div><p class="story__role">Performance Digital Marketing</p><p class="story__ctx">Academy graduate</p></div></div>
+        </article>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · Work -->
+<section class="slide" id="work" data-slide="Projects">
+  <div class="wrap slide__inner">
+    <header class="slide__head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__idx">09</span> Project Showcase</p>
+        <h2 class="title">Selected <em>work.</em></h2>
+      </div>
+      <div>
+        <p class="lede">Products designed and engineered end to end — from the first sketch to launch day.</p>
+        <p class="note" style="margin-top:12px">Concept projects — swap in real case studies before launch.</p>
+      </div>
+    </header>
+
+    <div class="work" id="work-slider">
+      <div class="work__viewport">
+        <div class="work__track">
+          <article class="project" style="--tint: rgba(200,162,74,.24)">
+            <div class="project__visual"><img class="project__img" src="assets/img/project-aurum.webp" alt="" loading="lazy" decoding="async"><div class="mock mock--shop" aria-hidden="true"><div class="mock__bar"><i></i><i></i><i></i><span></span></div><div class="mock__body"><div class="mock__side"><i></i><i></i><i></i><i></i></div><div class="mock__main"><div class="mock__kpis"><i></i><i></i><i></i></div><div class="mock__chart"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="mock__rows"><i></i><i></i></div></div></div></div></div>
+            <div class="project__info">
+              <p class="project__idx"><b>01</b> / 04</p>
+              <p class="project__type">E-commerce Platform</p>
+              <h3 class="project__name">Aurum Commerce</h3>
+              <p class="project__desc">A luxury storefront with AI-powered product search, one-page checkout and a live inventory dashboard for the team.</p>
+              <ul class="project__tech"><li class="chip">React</li><li class="chip">Node.js</li><li class="chip">Databases</li><li class="chip">Cloud</li></ul>
+              <div class="project__foot"><span class="chip chip--sample">Concept</span><a class="link-arrow" href="#contact">View Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="project" style="--tint: rgba(216,220,226,.18)">
+            <div class="project__visual"><img class="project__img" src="assets/img/project-sentinel.webp" alt="" loading="lazy" decoding="async"><div class="mock mock--chat" aria-hidden="true"><div class="mock__bar"><i></i><i></i><i></i><span></span></div><div class="mock__body"><div class="mock__side"><i></i><i></i><i></i><i></i><i></i></div><div class="mock__main"><div class="mock__kpis"><i></i><i></i><i></i></div><div class="mock__chart"><i></i><i></i><i></i><i></i></div><div class="mock__rows"><i></i></div></div></div></div></div>
+            <div class="project__info">
+              <p class="project__idx"><b>02</b> / 04</p>
+              <p class="project__type">AI Support Agent</p>
+              <h3 class="project__name">Sentinel Desk</h3>
+              <p class="project__desc">An AI agent that answers customer questions from company documents, escalates tricky cases and logs every conversation to the CRM.</p>
+              <ul class="project__tech"><li class="chip">Python</li><li class="chip">AI</li><li class="chip">Automation</li><li class="chip">APIs</li></ul>
+              <div class="project__foot"><span class="chip chip--sample">Concept</span><a class="link-arrow" href="#contact">View Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="project" style="--tint: rgba(200,162,74,.18)">
+            <div class="project__visual"><img class="project__img" src="assets/img/project-ledgerline.webp" alt="" loading="lazy" decoding="async"><div class="mock" aria-hidden="true"><div class="mock__bar"><i></i><i></i><i></i><span></span></div><div class="mock__body"><div class="mock__side"><i></i><i></i><i></i><i></i></div><div class="mock__main"><div class="mock__kpis"><i></i><i></i><i></i></div><div class="mock__chart"><i style="height:40%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:74%"></i><i style="height:58%"></i><i style="height:86%"></i><i style="height:70%"></i><i style="height:92%"></i></div><div class="mock__rows"><i></i><i></i><i></i></div></div></div></div></div>
+            <div class="project__info">
+              <p class="project__idx"><b>03</b> / 04</p>
+              <p class="project__type">Finance Analytics</p>
+              <h3 class="project__name">Ledgerline</h3>
+              <p class="project__desc">A real-time finance dashboard that unifies sales, expenses and cash flow, with automated weekly reports for leadership.</p>
+              <ul class="project__tech"><li class="chip">React</li><li class="chip">Python</li><li class="chip">Databases</li><li class="chip">Analytics</li></ul>
+              <div class="project__foot"><span class="chip chip--sample">Concept</span><a class="link-arrow" href="#contact">View Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="project" style="--tint: rgba(216,220,226,.14)">
+            <div class="project__visual"><img class="project__img" src="assets/img/project-campus.webp" alt="" loading="lazy" decoding="async"><div class="mock mock--lms" aria-hidden="true"><div class="mock__bar"><i></i><i></i><i></i><span></span></div><div class="mock__body"><div class="mock__side"><i></i><i></i><i></i><i></i><i></i></div><div class="mock__main"><div class="mock__kpis"><i></i><i></i><i></i></div><div class="mock__chart"><i></i><i></i></div><div class="mock__rows"><i></i><i></i><i></i></div></div></div></div></div>
+            <div class="project__info">
+              <p class="project__idx"><b>04</b> / 04</p>
+              <p class="project__type">Learning Platform</p>
+              <h3 class="project__name">Campus OS</h3>
+              <p class="project__desc">A learning management system for academies — live classes, recorded lessons, assignments and certificates in one place.</p>
+              <ul class="project__tech"><li class="chip">JavaScript</li><li class="chip">Node.js</li><li class="chip">Cloud</li><li class="chip">Cybersecurity</li></ul>
+              <div class="project__foot"><span class="chip chip--sample">Concept</span><a class="link-arrow" href="#contact">View Project <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="work__nav">
+        <div class="work__tabs" role="group" aria-label="Choose project">
+          <button type="button" data-go="0" aria-current="true">Aurum Commerce</button>
+          <button type="button" data-go="1">Sentinel Desk</button>
+          <button type="button" data-go="2">Ledgerline</button>
+          <button type="button" data-go="3">Campus OS</button>
+        </div>
+        <div class="work__arrows">
+          <button class="icon-btn" type="button" data-prev aria-label="Previous project"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-back"/></svg></button>
+          <button class="icon-btn" type="button" data-next aria-label="Next project"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · Social -->
+<section class="slide" id="connect" data-slide="Social">
+  <div class="wrap slide__inner">
+    <header class="slide__head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__idx">10</span> Community</p>
+        <h2 class="title">Stay Connected With <em>NEXORA</em></h2>
+      </div>
+      <p class="lede">Free lessons, student wins and a look inside the studio — wherever you already scroll.</p>
+    </header>
+    <div class="socials">
+      <a class="social" href="#connect"><svg class="social__glyph i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-instagram"/></svg><span class="social__name">Instagram</span><span class="social__what">Studio life, student wins and design drops</span><span class="link-arrow">Follow <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="social" href="#connect"><svg class="social__glyph i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-facebook"/></svg><span class="social__name">Facebook</span><span class="social__what">Admissions, events and community updates</span><span class="link-arrow">Follow <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="social" href="#connect"><svg class="social__glyph i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-youtube"/></svg><span class="social__name">YouTube</span><span class="social__what">Free tutorials and AI walkthroughs</span><span class="link-arrow">Subscribe <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="social" href="#connect"><svg class="social__glyph i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-linkedin"/></svg><span class="social__name">LinkedIn</span><span class="social__what">Case studies, insights and careers</span><span class="link-arrow">Connect <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a class="social" href="#connect"><svg class="social__glyph i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-tiktok"/></svg><span class="social__name">TikTok</span><span class="social__what">Quick tech tips and behind-the-build reels</span><span class="link-arrow">Follow <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Contact -->
+<section class="slide contact" id="contact" data-slide="Contact">
+  <img class="slide__bg" src="assets/img/bg-contact.webp" alt="" loading="lazy" decoding="async">
+  <div class="wrap slide__inner contact__layout">
+    <div>
+      <p class="eyebrow"><span class="eyebrow__idx">11</span> Start Here</p>
+      <h2 class="contact__title">Let's Build Something <em class="metal-text">Extraordinary.</em></h2>
+      <p class="lede" style="margin-top:22px">Tell us about your project or the course you're interested in. We reply within one business day.</p>
+      <ul class="contact__list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#g-whatsapp"/></svg><div><p class="contact__k">WhatsApp</p><p class="contact__v"><a href="https://wa.me/923135760708" target="_blank" rel="noopener">+92 313 5760708</a></p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#g-mail"/></svg><div><p class="contact__k">Email</p><p class="contact__v"><a href="mailto:mohsinshabbir010@gmail.com">mohsinshabbir010@gmail.com</a></p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#g-pin"/></svg><div><p class="contact__k">Location</p><p class="contact__v">Office address, City, Pakistan</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#g-clock"/></svg><div><p class="contact__k">Hours</p><p class="contact__v">Mon–Sat · 10:00–19:00</p></div></li>
+      </ul>
+      <a class="btn btn--ghost contact__wa" href="https://wa.me/923135760708?text=Hello%20NEXORA%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-whatsapp"/></svg> Chat on WhatsApp</a>
+      <div class="contact__socials">
+        <a href="#connect" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-instagram"/></svg></a>
+        <a href="#connect" aria-label="Facebook"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-facebook"/></svg></a>
+        <a href="#connect" aria-label="YouTube"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-youtube"/></svg></a>
+        <a href="#connect" aria-label="LinkedIn"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-linkedin"/></svg></a>
+        <a href="#connect" aria-label="TikTok"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-tiktok"/></svg></a>
+      </div>
+    </div>
+
+    <div class="form metal-border">
+      <form id="contact-form" novalidate>
+        <div class="form__grid">
+          <div class="field"><label for="f-name">Name <span>*</span></label><input id="f-name" name="name" autocomplete="name" required placeholder="Your full name"></div>
+          <div class="field"><label for="f-email">Email <span>*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+92 …"></div>
+          <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization" placeholder="Optional"></div>
+          <div class="field field--full">
+            <label for="f-service">Service Required <span>*</span></label>
+            <select id="f-service" name="service" required>
+              <option value="">Choose a service or course</option>
+              <optgroup label="Services">
+                <option>AI Solutions</option><option>Software Development</option><option>Website Development</option><option>Mobile App Development</option><option>Digital Marketing</option><option>Social Media Management</option><option>Branding &amp; Creative Design</option><option>Freelancing Solutions</option><option>Automation &amp; AI Agents</option><option>Business Technology Consulting</option>
+              </optgroup>
+              <optgroup label="Academy">
+                <option>Academy — AI Agents &amp; Automation Mastery</option><option>Academy — Computer Skills &amp; Office Professional</option><option>Academy — Performance Digital Marketing</option><option>Academy — Freelancing Career Accelerator</option><option>Academy — Social Media &amp; Content Creator Pro</option>
+              </optgroup>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field field--full"><label for="f-msg">Message <span>*</span></label><textarea id="f-msg" name="message" required placeholder="What would you like to build or learn?"></textarea></div>
+        </div>
+        <div class="form__foot">
+          <small>Fields marked * are required.</small>
+          <button class="btn btn--gold" type="submit">Start a Conversation <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </form>
+      <div class="form__done" id="form-done" hidden tabindex="-1"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="#top"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#nx-mark"/></svg>NEXORA</a>
+        <p class="footer__tag">Build Skills. Create Technology. Shape the Future.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="#top">Home</a></li><li><a href="#services">What We Do</a></li><li><a href="#agents">AI Agents</a></li><li><a href="#work">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="#services">AI Solutions</a></li><li><a href="#services">Software Development</a></li><li><a href="#services">Website Development</a></li><li><a href="#services">Mobile Apps</a></li><li><a href="#services">Automation &amp; AI Agents</a></li></ul>
+      </div>
+      <div>
+        <h4>Academy</h4>
+        <ul><li><a href="#course/ai-agents">AI Agent Course</a></li><li><a href="#course/computer">Computer Courses</a></li><li><a href="#course/marketing">Digital Marketing</a></li><li><a href="#course/freelancing">Freelancing</a></li><li><a href="#course/social">Social Media</a></li></ul>
+      </div>
+      <div>
+        <h4>Social Media</h4>
+        <ul><li><a href="#connect">Instagram</a></li><li><a href="#connect">Facebook</a></li><li><a href="#connect">YouTube</a></li><li><a href="#connect">LinkedIn</a></li><li><a href="#connect">TikTok</a></li></ul>
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">NEXORA</p>
+    <div class="footer__bottom">
+      <span>© 2026 NEXORA. All Rights Reserved.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923135760708?text=Hello%20NEXORA%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services%20and%20courses." target="_blank" rel="noopener" aria-label="Chat with NEXORA on WhatsApp">
+  <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#g-whatsapp"/></svg>
+  <span class="wa-float__label">Chat on WhatsApp</span>
+</a>
+
+<!-- Course detail page (filled by js/app.js from js/data.js) -->
+<div class="course" id="course" role="dialog" aria-modal="true" aria-labelledby="course-title" hidden></div>
+
+<script src="js/data.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/app.js"></script>
+</html>
